@@ -3,11 +3,42 @@
     <head>
         <meta charset="UTF-8">
 
-
+        <script src="https://cdn.tailwindcss.com"></script>
         
         <title>Hello</title>
     </head>
-    <body>
-        <div style="height: 100dvh; width: 100dvw; background-color: rgb(2, 48, 48);"></div>
+    <body class="overflow-hidden">
+        <header>
+            <div class="flex flex-row justify-center">
+                <div class="flex flex-row space-x-8 pt-3 px-5 text-lg mr-auto">
+                    <img src="Assests/ollama.png" class="w-8 mr-2" alt="ollama logo">
+                    <a class="pt-3.5 hover:underline">Blog</a>
+                    <a class="pt-3.5 hover:underline">Discord</a>
+                    <a class="pt-3.5 hover:underline">GitHub</a>
+                </div>
+                <div class="flex flex-row-reverse space-x-8 pt-3 px-5 text-lg ml-auto"></div>
+                    <a class="pt-3.5 hover:underline">Models</a>
+                    <a class="pt-3.5 hover:underline">Sign in</a>
+                    <a class="pt-3.5 hover:underline">Download</a>
+                </div>
+            </div>
+        </header>
+        
+        
+        <div class="flex flex-col items-center justify-center min-w-[100dvw] min-h-[75dvh] ">
+            <div class="flex flex-col items-center justify-center">
+                <img src="Assests/ollama.png" class="w-16 m-8" alt="ollama logo">
+                <div class="flex flex-col text-center">
+                    <h2 class="pb-2 mx-auto my-2 max-w-md text-3xl font-medium">Get up and running with large language models.</h2>
+                    <h3 class="pt-2 mx-auto max-w-sm text-neutral-500 text-lg">
+                        Run <a class="underline">Llama 3.2</a>, <a class="underline">Phi 3</a>, <a class="underline"> Mistral</a>, <a class="underline">Gemma 2</a>, and other models. Customize and create your own.
+                    </h3>
+                </div>
+                <div class="mt-12 flex flex-col text-center items-center justify-center">
+                    <button class="flex bg-neutral-800 hover:bg-black rounded-lg text-white px-8 py-2"><h1 class="font-xl">Download ↓</h1></button>
+                    <p class="pt-3 text-neutral-500 text-xs max-w-48">Available for macOS, Linux, and Windows (preview)</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
