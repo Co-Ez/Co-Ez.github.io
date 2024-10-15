@@ -3,38 +3,55 @@
     <head>        
         <link href="../tailwind.css" rel="stylesheet">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link href="styles.css" rel="stylesheet">
         
         <title>Homepage</title>
     </head>
 
-    <body class="w-screen h-screen bg-gradient-to-b from-[#e62314] to-[#f19e18] fade-in overflow-x-hidden">
-        <div>
-            <header class="w-screen h-fit bg-gray-300">
-                <nav>
-                    <ul class="flex flex-row space-x-8 px-2 mx-3">
-                        <li class="NavElement"><a href="#home">Home</a></li>
-                        <li class="NavElement"><a href="#aboutme">About Me</a></li>
-                        <li class="NavElement"><a href="#projects">Projects</a></li>
-                        <li class="NavElement"><a href="#education">Education</a></li>
-                        <li class="NavElement"><a href="#workexperience">Work Experience</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <h1 class="text-3xl text-white text-center font-semibold mt-12">Ezzie's Portfolio</h1>
-            <div class="grid grid-rows-2 grid-flow-col">
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
-                <div><img src="https://m.media-amazon.com/images/I/71wr+fop5HL._AC_SX466_.jpg"></div>
+    <body class="overflow-hidden">
+        <header class="w-screen h-fit">            
+            <div class="off-screen-menu">
+                <ul class="space-y-4 mt-24 font-semibold">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#workexperience">Work Experience</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <div class="ham-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <div class="h-screen w-screen flex flex-col items-center justify-start bg-gradient-to-b from-[#e62314] to-[#f19e18]">
+            <div class="h-screen flex flex-col items-center">
+                <h1 class="text-3xl text-white text-center font-semibold mt-12">Ezzie's Portfolio</h1>
+                
+                <div class="lg:flex grid grid-rows-2 grid-flow-col gap-2 lg:gap-10 m-5 mx-auto my-auto">
+                    <div class="bg-green-800 rounded-full w-[38dvw] h-[32dvh] md:w-[20dvw] md:h-[35dvw]">
+                        <h1 class="text-center mt-5 font-semibold text-3xl">About Me</h1>
+                    </div>
+                    <div class="bg-blue-800 rounded-full w-[38dvw] h-[32dvh] md:w-[20dvw] md:h-[35dvw]">
+
+                    </div>
+                    <div class="bg-red-800 rounded-full w-[38dvw] h-[32dvh] md:w-[20dvw] md:h-[35dvw] ">  
+                    </div>
+                    <div class="bg-yellow-300 rounded-full w-[38dvw] h-[32dvh] md:w-[20dvw] md:h-[35dvw]">
+
+                    </div>
+                </div>
             </div>
         </div>
+
+        <script src="scripts.js"></script>
+
     </body>
 </html>
