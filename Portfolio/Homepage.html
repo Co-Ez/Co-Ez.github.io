@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>        
-        <link href="../tailwind.css" rel="stylesheet">
+        <!-- <link href="../tailwind.css" rel="stylesheet"> -->
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://cdn.tailwindcss.com"></script>
 
         <link href="styles.css" rel="stylesheet">
         
         <title>Homepage</title>
     </head>
 
-    <body class="overflow-hidden main-gradient min-h-[100dvh] min-w-[100dvw]">
+    <body class="main-gradient min-h-[100dvh] min-w-[100dvw]">
         <header class="w-screen h-fit">            
             <div class="off-screen-menu">
                 <ul class="space-y-4 mt-24 font-semibold">
@@ -35,10 +37,13 @@
             <h1 class="text-3xl text-white text-center font-semibold mt-12">Ezzie's Portfolio</h1>
         </div>
 
-        <div class="min-h-[75dvh] min-w-[100dvw] flex flex-row flex-none items-center justify-center">
-            <button class="p-8 bg-black shadow-xl border border-black">asdad</button>
-
-            <button class="w-2 h-2 bg-slate-800 text-white">asdad</button>
+        <div class="container mx-auto mt-8">
+            <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="content-boxes"></div>
+                <div class="content-boxes"></div>
+                <div class="content-boxes"></div>
+                <div class="content-boxes"></div>
+            </section>
         </div>
 
         <script src="hamburger.js"></script>
