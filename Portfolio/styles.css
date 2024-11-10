@@ -195,6 +195,9 @@
   
     margin: 5px;
     border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
   }
   
   .cards:hover {
@@ -237,7 +240,7 @@
 }
 
 .cards-asso {
-    transition: 0.5s;
+  transition: 0.5s;
 }
 
 .cards.blur {
@@ -247,14 +250,17 @@
 
 .cards a {
   opacity: 0;
-  transition: 0.5s;
+  transition: opacity 0.5s;
+  pointer-events: none;
 }
 
 .cards:hover a {
   opacity: 1;
-  transition: 0.5s;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.5s;
 }
 
+/*  */
 #night-sky {
   position: fixed;
   z-index: -1;
