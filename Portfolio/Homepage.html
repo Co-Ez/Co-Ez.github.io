@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+    
+    <!-- <a href="#" class="btn-flip" data-back="Work Experience" data-front="→"></a> Cool button -->
+
     <head>        
         <!-- <link href="../tailwind.css" rel="stylesheet"> -->
 
@@ -13,7 +16,7 @@
     </head>
 
     <body class="main-gradient min-h-[100dvh] min-w-[100dvw]">
-        <header class="w-screen h-fit">            
+        <!-- <header class="w-screen h-fit"> ----------------HAM MENU---------------- 
             <div class="off-screen-menu">
                 <ul class="space-y-4 mt-24 font-semibold">
                     <li><a href="#home">Home</a></li>
@@ -31,38 +34,29 @@
                     <span></span>
                 </div>
             </nav>
-        </header>
+        </header> -->
 
-        <div class="h-fit w-screen flex flex-col items-center justify-start">
-            <h1 class="text-3xl text-white text-center font-semibold mt-12">Ezzie's Portfolio</h1>
+        <div class="card-container">
+            <div class="cards"> 
+                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
+            </div>
+            <div class="cards">
+                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
+            </div>
+            <div class="cards">
+                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
+            </div>
+            <div class="cards">
+                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
+            </div>
         </div>
 
-        <div class="container mx-auto mt-8">
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="content-boxes flex flex-col items-center">
-                    <p></p>
-
-                    <a href="#" class="btn-flip" data-back="About Me" data-front="→"></a>
-                </div>
-                <div class="content-boxes">
-                    <p></p>
-
-                    <a href="#" class="btn-flip" data-back="Projects" data-front="→"></a>
-                </div>
-                <div class="content-boxes">
-                    <p></p>
-
-                    <a href="#" class="btn-flip" data-back="Education" data-front="→"></a>
-                </div>
-                <div class="content-boxes">
-                    <p></p>
-
-                    <a href="#" class="btn-flip" data-back="Work Experience" data-front="→"></a>
-                </div>
-            </section>
+        <div id="night-sky" style="--number-of-stars: 40;" class="cards-asso">
         </div>
 
-        <script src="hamburger.js"></script>
+        <!-- <script src="hamburger.js"></script> -->
+        <script src="SiblingBlur.js"></script>
+        <script src="ShootingStars.js"></script>
 
     </body>
 </html>
