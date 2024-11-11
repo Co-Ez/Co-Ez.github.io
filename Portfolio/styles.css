@@ -204,6 +204,33 @@
     flex: 4;
     transition: 0.5s;
   }
+
+  .cards h1 {
+    background-image: url("../Assests/nightsky.jpg");
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    font-size: xx-large;
+    font-weight: 900;
+    text-align: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+  
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .cards:hover h1 {
+    opacity: 0;
+    font-size: xx-small;
+    margin-top: 0%;
+  
+    transition: 0.5s;
+  }
 }
 @media (min-width: 769px) {
   .card-container {
@@ -235,6 +262,33 @@
   
   .cards:hover {
     flex: 3;
+    transition: 0.5s;
+  }
+
+  .cards h1 {
+    background-image: url("../Assests/nightsky.jpg");
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+    font-size: xxx-large;
+    font-weight: 900;
+    text-align: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50%;
+  
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .cards:hover h1 {
+    opacity: 0;
+    font-size: xx-small;
+    margin-top: 0%;
+  
     transition: 0.5s;
   }
 }
