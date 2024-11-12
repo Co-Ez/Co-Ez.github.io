@@ -209,8 +209,7 @@
     background-image: url("../Assests/sunnyday.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
     background-clip: text;
   
     font-size: xx-large;
@@ -229,7 +228,7 @@
     opacity: 0;
     font-size: xx-small;
     margin-top: 0%;
-  
+    /* transforms for same effects, look at positions */
     transition: 0.5s;
   }
 }
@@ -270,8 +269,7 @@
     background-image: url("../Assests/sunnyday.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
     background-clip: text;
   
     font-size: xxx-large;
@@ -316,7 +314,7 @@
   transition: opacity 0.5s 0.5s;
 }
 
-/*  */
+/* stars */
 #night-sky {
   position: fixed;
   z-index: -1;
