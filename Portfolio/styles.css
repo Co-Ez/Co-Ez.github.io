@@ -171,6 +171,7 @@
 }
 /* ------------------------------------------------------- */
 
+/* SMALL */
 @media (max-width: 768px) {
   .card-container {
     display: flex;
@@ -191,7 +192,7 @@
     background-color: #7e7f801a;
   
     width: 75%;
-    height: 50%;
+    height: 100%;
   
     margin: 5px;
     border-radius: 0.5rem;
@@ -215,26 +216,111 @@
     color: transparent;
     background-clip: text;
   
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
     text-align: center;
+    padding: 3px;
   
+    display: block;
+    position: relative;
 
-  
-    opacity: 1;
+    top: 40%;
     transition: 0.5s;
   }
   
   .cards:hover h1 {
+    top: 0%;
+  }
+  
+  .cards p {
     opacity: 0;
-    transform: scale(0.01);
-    margin-top: 0%;
-    /* transforms for same effects, look at positions */
+    font-size: x-large;
+  }
+
+  .cards:hover p {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+/* ------------------------------------------------------------------- */
+
+/* MID */
+@media (min-width: 769px) {
+  .card-container {
+    display: flex;
+  
+    width: 100dvw;
+    height: 100dvh;
+  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards {
+    flex: 1;
+    cursor: pointer;
+    transition: 0.5s;
+  
+    background-color: #7e7f801a;
+  
+    width: 10dvw;
+    height: 70%;
+  
+    margin: 10px;
+    border-radius: 0.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cards:hover {
+    flex: 3;
+    transition: 0.5s;
+  }
+
+  .cards h1 {
+    background-image: url("../Assests/sunnyday.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    background-clip: text;
+  
+    font-size: x-large;
+    font-weight: 900;
+    text-align: center;
+  
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: block;
+    position: relative;
+
+    top: 40%;
     transition: 0.5s;
   }
   
+  .cards:hover h1 {
+    top: 0%;
+    padding: 3px;
+  }
+
+  .cards p {
+    display: none;
+    font-size: x-large;
+  }
+
+  .cards:hover p {
+    display: flex;
+    animation-name: appear;
+    animation-duration: 1.5s;
+  }
 }
-@media (min-width: 769px) {
+/* ------------------------------------------------------------------- */
+
+/* LARGE */
+@media (min-width: 1024px) {
   .card-container {
     display: flex;
   
@@ -261,6 +347,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   
   .cards:hover {
@@ -281,18 +368,20 @@
   
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45%;
   
     opacity: 1;
     transition: 0.5s;
+
+    display: block;
+    position: relative;
+
+    top: 40%;
   }
   
   .cards:hover h1 {
-    opacity: 0;
-    font-size: xx-small;
-    margin-top: 0%;
-  
+    top: 0%;
     transition: 0.5s;
+    padding: 3px;
   }
 
   .cards p {
@@ -305,7 +394,9 @@
     transition: 0.5s;
   }
 }
+/* ------------------------------------------------------------------- */
 
+/* universal styles */
 .cards-asso {
   transition: 0.5s;
 }
@@ -316,17 +407,32 @@
 }
 
 .cards a {
-  opacity: 0;
-  transition: opacity 0.5s;
+  display: none;
   pointer-events: none;
 }
 
 .cards:hover a {
-  opacity: 1;
+  display: flex;
   pointer-events: auto;
-  transition: opacity 0.5s 0.5s;
+  
+  animation-name: appear;
+  animation-duration: 1.5s;
 }
 
+.content-title-wrapper {
+  flex-grow: 1;
+  text-align: center;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+/* ------------------------------------------------------------------------------- */
 /* stars */
 #night-sky {
   position: fixed;
