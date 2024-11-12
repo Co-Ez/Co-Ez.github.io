@@ -225,7 +225,7 @@
     position: relative;
 
     top: 40%;
-    transition: 0.5s;
+    transition: 0.25s;
   }
   
   .cards:hover h1 {
@@ -298,7 +298,7 @@
     position: relative;
 
     top: 40%;
-    transition: 0.5s;
+    transition: 0.25s;
   }
   
   .cards:hover h1 {
@@ -370,7 +370,7 @@
     margin-right: auto;
   
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.25s;
 
     display: block;
     position: relative;
