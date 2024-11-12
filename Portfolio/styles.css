@@ -198,6 +198,9 @@
 
     display: flex;
     flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
   }
   
   .cards:hover {
@@ -216,9 +219,7 @@
     font-weight: 900;
     text-align: center;
   
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25%;
+
   
     opacity: 1;
     transition: 0.5s;
@@ -226,11 +227,12 @@
   
   .cards:hover h1 {
     opacity: 0;
-    font-size: xx-small;
+    transform: scale(0.01);
     margin-top: 0%;
     /* transforms for same effects, look at positions */
     transition: 0.5s;
   }
+  
 }
 @media (min-width: 769px) {
   .card-container {
@@ -258,6 +260,7 @@
 
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
   .cards:hover {
@@ -278,7 +281,7 @@
   
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50%;
+    margin-top: 45%;
   
     opacity: 1;
     transition: 0.5s;
@@ -291,6 +294,16 @@
   
     transition: 0.5s;
   }
+
+  .cards p {
+    opacity: 0;
+    font-size: x-large;
+  }
+
+  .cards:hover p {
+    opacity: 1;
+    transition: 0.5s;
+  }
 }
 
 .cards-asso {
@@ -299,7 +312,7 @@
 
 .cards.blur {
   filter: blur(5px);
-  opacity: 0.2;
+  opacity: 0.2; 
 }
 
 .cards a {
