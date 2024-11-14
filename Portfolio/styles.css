@@ -233,13 +233,19 @@
   }
   
   .cards p {
-    opacity: 0;
+    display: none;
     font-size: x-large;
+    opacity: 0;
   }
 
   .cards:hover p {
-    opacity: 1;
-    transition: 0.5s;
+    display: flex;
+    color: white;
+    font-weight: 500;
+    animation-name: appear;
+    animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
   }
 }
 /* ------------------------------------------------------------------- */
@@ -309,12 +315,17 @@
   .cards p {
     display: none;
     font-size: x-large;
+    opacity: 0;
   }
 
   .cards:hover p {
     display: flex;
+    color: white;
+    font-weight: 500;
     animation-name: appear;
     animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
   }
 }
 /* ------------------------------------------------------------------- */
@@ -387,6 +398,7 @@
   .cards p {
     display: none;
     font-size: x-large;
+    opacity: 0;
   }
 
   .cards:hover p {
@@ -395,6 +407,8 @@
     font-weight: 500;
     animation-name: appear;
     animation-duration: 1.5s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
   }
 }
 /* ------------------------------------------------------------------- */
