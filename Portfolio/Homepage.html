@@ -15,7 +15,7 @@
         <title>Homepage</title>
     </head>
 
-    <body class="main-gradient min-h-[100dvh] min-w-[100dvw]">
+    <body class="main-gradient min-h-[100dvh] min-w-[100dvw]" style="overflow-x: hidden;">
         <!-- <header class="w-screen h-fit"> ----------------HAM MENU---------------- 
             <div class="off-screen-menu">
                 <ul class="space-y-4 mt-24 font-semibold">
@@ -37,33 +37,36 @@
         </header> -->
 
         <div class="card-container">
-            <div class="cards">
+            <div id="card1" class="cards">
                 <div class="content-title-wrapper">
                     <h1>About Me</h1>
                     <p>pinapple!</p>
                 </div>
-                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="About Me" data-front="→"></a>
+                <a onclick="expansion('card1')" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="About Me" data-front="→"></a>
             </div>
-            <div class="cards">
+
+            <div id="card2" class="cards">
                 <div class="content-title-wrapper">
                     <h1>Projects</h1>
                     <p>pinapple!</p>
                 </div>
-                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Projects" data-front="→"></a>
+                <a onclick="expansion('card2')" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Projects" data-front="→"></a>
             </div>
-            <div class="cards">
+
+            <div id="card3" class="cards">
                 <div class="content-title-wrapper">
                     <h1>Education</h1>
                     <p>pinapple!</p>
                 </div>
-                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Education" data-front="→"></a>
+                <a onclick="expansion('card3')" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Education" data-front="→"></a>
             </div>
-            <div class="cards">
+
+            <div id="card4" class="cards">
                 <div class="content-title-wrapper">
                     <h1>Work Experience</h1>
                     <p>pinapple!</p>
                 </div>
-                <a href="#" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
+                <a onclick="expansion('card4')" class="btn-flip mt-auto mx-auto mb-3 rounded-lg" data-back="Work Experience" data-front="→"></a>
             </div>
         </div>
 
@@ -73,6 +76,7 @@
         <!-- <script src="hamburger.js"></script> -->
         <script src="SiblingFocus.js"></script>
         <script src="ShootingStars.js"></script>
+        <script src="SiblingExpansion.js"></script>
 
     </body>
 </html>
