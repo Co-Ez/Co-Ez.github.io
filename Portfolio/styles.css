@@ -402,14 +402,19 @@
   }
 
   .cards:hover p {
-    display: flex;
+    display: block;
     color: white;
     font-weight: 500;
+
+    padding-top: 1rem;
+
     animation-name: appear;
     animation-duration: 1.5s;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
   }
+
+  
 }
 /* ------------------------------------------------------------------- */
 
@@ -451,14 +456,36 @@
 }
 /* ------------------------------------------------------------------------------- */
 
+
 /* Animation Styles for Focus */
 .content-active {
+  flex: 3;
+  transition: 0.5s;
+
+  width: 50dvw;
+
   animation-name: expand;
   animation-delay: 2.5s;
   animation-duration: 2.5s;
   animation-fill-mode: forwards;
 }
 
+.content-active p {
+  display: flex;
+  color: white;
+  font-weight: 500;
+  animation-name: appear;
+  animation-duration: 1.5s;
+  animation-delay: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+.content-active h1 {
+  top: 0%;
+  transition: 0.5s;
+  padding: 3px;
+}
+/* Sibling Expansion -- unused */
 .content-disable {
   animation-name: slide-up;
   animation-duration: 2.5s;
@@ -474,10 +501,10 @@
     height: 100%;
   }
   100% {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 15%;
+    margin-right: 15%;
 
-    width: 100%;
+    width: 50dvw;
     height: 100%;
   }
 }
