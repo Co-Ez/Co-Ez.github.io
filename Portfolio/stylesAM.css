@@ -1,0 +1,135 @@
+/* base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  a {
+    color: black;
+  }
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: #183be9;
+  }
+  
+  body {
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+
+.main-gradient {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
+/* BUTTON ANIMATION */
+.btn-flip{
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  
+  &:hover{
+    
+    &:after{
+      opacity: 1;
+      transform: translateY(0) rotateX(0);
+    }
+    
+    &:before{
+      opacity: 0;
+      transform: translateY(50%) rotateX(90deg);
+    }
+  }
+  
+  &:after{
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-front);
+    transform: translateY(-50%) rotateX(90deg);
+    font-size: xx-large;
+  }
+  
+  &:before{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-back);
+    transform: translateY(0) rotateX(0);
+  }
+}
+/* ------------------------------------------------------- */
+
+/* SMALL */
+@media (max-width: 768px) {
+
+}
+/* ------------------------------------------------------------------- */
+
+/* MID */
+@media (min-width: 769px) {
+
+}
+/* ------------------------------------------------------------------- */
+
+/* LARGE */
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    
+    #container {
+        display: inline-block;
+
+        width: 50dvw;
+        min-height: 100dvh;
+
+        align-items: center;
+
+        background-color: #183be923;
+    }
+
+    .holding-container {
+        position: absolute;
+
+        width: 50dvw;
+        height: 75dvh;
+
+        padding: 2rem;
+
+        margin-top: 12.5dvh;
+        margin-bottom: 2.5rem;
+
+        border: 2.5px solid black;
+
+        background-color: #183be9;
+    }
+}
