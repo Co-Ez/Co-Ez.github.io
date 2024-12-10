@@ -402,14 +402,19 @@
   }
 
   .cards:hover p {
-    display: flex;
+    display: block;
     color: white;
     font-weight: 500;
+
+    padding-top: 1rem;
+
     animation-name: appear;
     animation-duration: 1.5s;
     animation-delay: 0.25s;
     animation-fill-mode: forwards;
   }
+
+  
 }
 /* ------------------------------------------------------------------- */
 
@@ -451,6 +456,7 @@
 }
 /* ------------------------------------------------------------------------------- */
 
+
 /* Animation Styles for Focus */
 .content-active {
   flex: 3;
@@ -479,7 +485,7 @@
   transition: 0.5s;
   padding: 3px;
 }
-
+/* Sibling Expansion -- unused */
 .content-disable {
   animation-name: slide-up;
   animation-duration: 2.5s;
